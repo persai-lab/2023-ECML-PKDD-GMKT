@@ -4,7 +4,6 @@ from torch_geometric.nn import TopKPooling, SAGEConv, GATConv
 from torch_geometric.nn import global_mean_pool as gap, global_max_pool as gmp
 
 
-# references: https://github.com/seewoo5/KT/blob/master/network/DKVMN.py
 
 
 class GMKT(nn.Module):
