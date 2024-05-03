@@ -77,7 +77,7 @@ class GMKT_DataLoader:
         l_records = data["traindata"]["l_data"]
         d_records = data["traindata"]["d_data"]
 
-        self.train_data_q, self.train_data_a, self.train_data_l, self.train_data_d = self.TAMKOT_ExtDataset(q_records,
+        self.train_data_q, self.train_data_a, self.train_data_l, self.train_data_d = self.GMKT_ExtDataset(q_records,
                                                                                                        a_records,
                                                                                                        l_records,
                                                                                                        d_records,
@@ -107,7 +107,7 @@ class GMKT_DataLoader:
             d_records = data["testdata"]["d_data"]
 
 
-            self.test_data_q, self.test_data_a, self.test_data_l, self.test_data_d = self.TAMKOT_ExtDataset(q_records,
+            self.test_data_q, self.test_data_a, self.test_data_l, self.test_data_d = self.GMKT_ExtDataset(q_records,
                                                                                                           a_records,
                                                                                                           l_records,
                                                                                                           d_records,
@@ -249,7 +249,7 @@ class GMKT_DataLoader:
                np.array(neighbors_q_test_data), np.array(neighbors_l_test_data)
 
 
-    def TAMKOT_ExtDataset(self, q_records, a_records, l_records, d_records,
+    def GMKT_ExtDataset(self, q_records, a_records, l_records, d_records,
                                            max_seq_len,
                                            stride):
 
